@@ -10,15 +10,22 @@ https://www.codewars.com/kata/595970246c9b8fa0a8000086/train/javascript
 */
 
 
-function capitalizeWord(word) {
-    let newWord = word.split('')
-    newWord.shift()
-    const capWord = word[0].toUpperCase();
-    newWord.unshift(capWord);
-    return newWord;
-}
+
+
+
+
+
+// 4/14/2022
+
+// function capitalizeWord(word) {
+//     let newWord = word.split('')
+//     newWord.shift()
+//     const capWord = word[0].toUpperCase();
+//     newWord.unshift(capWord);
+//     return newWord;
+// }
   
-console.log(capitalizeWord('akil'));
+// console.log(capitalizeWord('akil'));
 
 
 /*

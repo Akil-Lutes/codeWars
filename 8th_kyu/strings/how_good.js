@@ -14,31 +14,31 @@ https://www.codewars.com/kata/5601409514fc93442500010b/train/javascript
 
 */
 
+// 4/15/2022
+// function betterThanAverage(classPoints, yourPoints) {
+//     // I needed to create placeholder value of 0 first to add.
+//     let classAvg = 0;
+//     // Calculate Average by using for loop and adding up all values then dividing by total amount of points/grades. n = num.
+//     // Then divde sum of numbers by array.length
+//     // Or I could the use the reduce array method. I'll try that next time.
+//     for (let i = 0; i < classPoints.length; i++) {
+//         classAvg = classAvg + classPoints[i];
+//         // console.log(i)
+//     }
 
-function betterThanAverage(classPoints, yourPoints) {
-    // I needed to create placeholder value of 0 first to add.
-    let classAvg = 0;
-    // Calculate Average by using for loop and adding up all values then dividing by total amount of points/grades. n = num.
-    // Then divde sum of numbers by array.length
-    // Or I could the use the reduce array method. I'll try that next time.
-    for (let i = 0; i < classPoints.length; i++) {
-        classAvg = classAvg + classPoints[i];
-        // console.log(i)
-    }
-
-    classAvg = classAvg / classPoints.length;
-    // console.log(classAvg);
-    console.log(yourPoints)
-    console.log(classAvg)
-    if (yourPoints > classAvg) {
-        return true;
-    } else {
-        return false;
-    }
+//     classAvg = classAvg / classPoints.length;
+//     // console.log(classAvg);
+//     console.log(yourPoints)
+//     console.log(classAvg)
+//     if (yourPoints > classAvg) {
+//         return true;
+//     } else {
+//         return false;
+//     }
     
-}
+// }
   
-betterThanAverage([56, 93, 85, 97, 82], 93);
+// betterThanAverage([56, 93, 85, 97, 82], 93);
 
 
 

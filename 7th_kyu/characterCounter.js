@@ -16,38 +16,38 @@ Examples
 // Link to problem https://www.codewars.com/kata/56786a687e9a88d1cf00005d/train/javascript
 
 // 11/10/21
-function validateWord(s) {
-  // need an if statement
-  // need two for loops
-  // empty object
-  // need a placeholder max
-  let charMap = {};
-  let max = 0;
-  let str = s.toLowerCase();
-  console.log(str);
-  for (let char of str) {
-    if (!charMap[char]) {
-      charMap[char] = 1;
-    } else {
-      charMap[char] += 1;
-    }
-  }
+// function validateWord(s) {
+//   // need an if statement
+//   // need two for loops
+//   // empty object
+//   // need a placeholder max
+//   let charMap = {};
+//   let max = 0;
+//   let str = s.toLowerCase();
+//   console.log(str);
+//   for (let char of str) {
+//     if (!charMap[char]) {
+//       charMap[char] = 1;
+//     } else {
+//       charMap[char] += 1;
+//     }
+//   }
 
-  for (let char in charMap) {
-    if (charMap[char] >= max) {
-      max = charMap[char]
-    }
-    console.log(`${char}: ${charMap[char]}`)
-  }
+//   for (let char in charMap) {
+//     if (charMap[char] >= max) {
+//       max = charMap[char]
+//     }
+//     console.log(`${char}: ${charMap[char]}`)
+//   }
 
-  for (let char in charMap) {
-    if (charMap[char] >= max) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-  return max;
-}
+//   for (let char in charMap) {
+//     if (charMap[char] >= max) {
+//       return true;
+//     } else {
+//       return false;
+//     }
+//   }
+//   return max;
+// }
 
-validateWord('abcabcd');
+// validateWord('abcabcd');

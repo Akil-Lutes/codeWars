@@ -16,6 +16,74 @@ This is indexed from [1..n] (not zero indexed!)
 https://www.codewars.com/kata/5680781b6b7c2be860000036/train/javascript
 */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 5/2/22
+// function vowelIndices(word){
+//     // two for loops
+//     // if statement
+//     // array with vowels
+//     // empty array
+//     let empArr = [];
+//     let vowArr = ['a', 'e', 'i', 'o', 'u', 'y'];
+//     const lowWord = word.toLowerCase().split('');
+
+//     for (let i = 0; i < lowWord.length; i++) {
+//         for (let j = 0; j < vowArr.length; j++) {
+//             if (lowWord[i] === vowArr[j]) {
+//                 // I want the index of the original word ex. 'Super'
+//                 empArr.push(i + 1);
+//             }
+//         }
+//     }
+//     console.log(empArr)
+//     return empArr;
+// }
+
+// vowelIndices('Super');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // 4/25/22
 // function vowelIndices(word){
 //     //your code here

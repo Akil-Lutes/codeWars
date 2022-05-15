@@ -15,12 +15,49 @@ https://www.codewars.com/kata/57f6ad55cca6e045d2000627/train/javascript
 
 */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 5/15/2022
+
+// function squareOrSquareRoot(array) {
+//   // use array map
+//   // use ternary operator
+//   // if number is an integer (perfect square number), then square root, not then square **2
+//   return array.map(exp => Number.isInteger(Math.sqrt(exp)) ? Math.sqrt(exp) : exp*exp);
+// }
+
+// console.log(squareOrSquareRoot([4,3,9,7,2,1]))
+
+
+
+
 // 4/15/2022
 // function squareOrSquareRoot(array) {
 //     // For loop
 //     // If statement inside of foor loop
 //     let sqrArr = [];
 //     for (let i = 0; i < array.length; i++) {
+        // *** Tests if the number is an intger after being square rooted ***
 //         if (Number.isInteger((Math.sqrt(array[i]))) == true) {
 //             sqrArr.push(Math.sqrt(array[i]))
 //         } else {

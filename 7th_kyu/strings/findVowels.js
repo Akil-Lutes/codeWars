@@ -18,22 +18,27 @@ https://www.codewars.com/kata/5680781b6b7c2be860000036/train/javascript
 
 
 
+// 5/24/22
+// function vowelIndices(word){
+//     // two if statements
+//     // array with vowels
+//     // for loop
+//     const vowArr = ['a', 'e', 'i', 'o', 'u', 'y'];
+//     const lowWord = word.toLowerCase().split('');
+//     let empArr = [];
+//     for (let i = 0; i < word.length; i++) {
+//         for (let j = 0; j < vowArr.length; j++) {
+//             if (lowWord[i] === vowArr[j]) {
+//                 empArr.push(i + 1);
+//                 console.log(empArr)
+//             }
+//         }
+//     }
+//     console.log(empArr)
+//     return empArr;
+//   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// vowelIndices('super');
 
 
 

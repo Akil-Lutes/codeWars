@@ -15,6 +15,42 @@ Examples
 
 // Link to problem https://www.codewars.com/kata/56786a687e9a88d1cf00005d/train/javascript
 
+
+
+
+
+
+
+// 5/24/2022
+function validateWord(s) {
+    // I need to initiate counter by !
+    // Need three for loops
+    // And empty object
+    // max counter
+    let charMap = {};
+    let max = 0;
+    let str = s.toLowerCase();
+    // console.log(str);
+
+    for (let char of str) {
+        if (!charMap[char]) {
+            charMap[char] = 1;
+        } else {
+            charMap[char] += 1;
+        }
+    };
+
+    for (let char in charMap) {
+        // console.log(char);
+    }
+
+    console.log(charMap);
+};
+
+validateWord('123Abc!');
+
+
+
 // 11/10/21
 // function validateWord(s) {
 //   // need an if statement

@@ -27,27 +27,46 @@ function validateWord(s) {
     // Need three for loops
     // And empty object
     // max counter
-    let charMap = {};
+    // trying to create empty object to push into empty array so I can peform aggregate function like reduce
+    let charMapObj = {};
     let max = 0;
     let str = s.toLowerCase();
     // console.log(str);
 
     for (let char of str) {
-        if (!charMap[char]) {
-            charMap[char] = 1;
+        if (!charMapObj[char]) {
+            charMapObj[char] = 1;
         } else {
-            charMap[char] += 1;
+            charMapObj[char] += 1;
         }
     };
 
-    for (let char in charMap) {
+    for (let char in charMapObj) {
         // console.log(char);
+        if (charMapObj[char] >= max) {
+            max = charMapObj[char]
+        }
+        // console.log(`${char}: ${charMap[char]}`)
     }
 
-    console.log(charMap);
-};
+    // let charMapFinal = Object.keys(charMap).length;
+    // console.log(charMapFinal);
 
-validateWord('123Abc!');
+    // if (charMapFinal) {
+
+    // }
+
+
+    for (let char in charMap) {
+        if (charMapObj[char] != max) {
+            return false;
+        } else {
+            return true;
+        }
+    };
+    return max;
+}
+validateWord('abcabcd');
 
 
 

@@ -15,6 +15,33 @@ Examples
 
 // Link to problem https://www.codewars.com/kata/56786a687e9a88d1cf00005d/train/javascript
 
+/*
+*** My I own answer ***
+function validateWord(s) {
+    let charMapObj = {};
+    let max = 0;
+    let str = s.toLowerCase();
+
+    for (let char of str) {
+        if (!charMapObj[char]) {
+            charMapObj[char] = 1;
+        } else {
+            charMapObj[char] += 1;
+        }
+    };
+
+    let charMapArr = Object.values(charMapObj);
+    let maxMapArr = Math.max(...charMapArr);
+    let minMapArr = Math.min(...charMapArr);
+
+    if (minMapArr < maxMapArr) {
+        return false;
+    } else {
+        return true;
+    }
+}
+validateWord('abcabcd');
+*/
 
 
 
@@ -28,6 +55,7 @@ function validateWord(s) {
     // And empty object
     // max counter
     // trying to create empty object to push into empty array so I can peform aggregate function like reduce
+    // let charMapArr = [];
     let charMapObj = {};
     let max = 0;
     let str = s.toLowerCase();
@@ -41,30 +69,36 @@ function validateWord(s) {
         }
     };
 
-    for (let char in charMapObj) {
-        // console.log(char);
-        if (charMapObj[char] >= max) {
-            max = charMapObj[char]
-        }
-        // console.log(`${char}: ${charMap[char]}`)
+    let charMapArr = Object.values(charMapObj);
+    let maxMapArr = Math.max(...charMapArr);
+    let minMapArr = Math.min(...charMapArr);
+
+    console.log(charMapArr);
+    console.log(minMapArr);
+    console.log(maxMapArr);
+
+    if (minMapArr < maxMapArr) {
+        return false;
+        // console.log(false);
+    } else {
+        return true;
     }
 
-    // let charMapFinal = Object.keys(charMap).length;
-    // console.log(charMapFinal);
-
-    // if (charMapFinal) {
-
+    // for (let char in charMapObj) {
+    //     // console.log(char);
+    //     if (charMapObj[char] >= max) {
+    //         max = charMapObj[char]
+    //     }
+    //     // console.log(`${char}: ${charMap[char]}`)
     // }
 
-
-    for (let char in charMap) {
-        if (charMapObj[char] != max) {
-            return false;
-        } else {
-            return true;
-        }
-    };
-    return max;
+    // for (let char in charMapObj) {
+    //     if (charMapObj[char] != max) {
+    //         return false;
+    //     } else {
+    //         return true;
+    //     }
+    // };return max;
 }
 validateWord('abcabcd');
 

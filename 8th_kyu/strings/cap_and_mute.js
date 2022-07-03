@@ -9,31 +9,12 @@ https://www.codewars.com/kata/595970246c9b8fa0a8000086/train/javascript
 
 */
 
+// 7/2/2022
+// function capitalizeWord(word) {
+//   return word[0].toUpperCase() + word.slice(1);;
+// }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// console.log(capitalizeWord('akil'));
 
 
 // 4/18/2022

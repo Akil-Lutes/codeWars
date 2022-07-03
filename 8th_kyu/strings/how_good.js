@@ -14,6 +14,42 @@ https://www.codewars.com/kata/5601409514fc93442500010b/train/javascript
 
 */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 7/3/2022
+// function betterThanAverage(classPoints, yourPoints) {
+//   // Maybe I can use reduce method to get average score
+//   // if statement or tenary operator maybe
+//   const classAvg = classPoints.reduce((preVal, currVal) => preVal + currVal, 0) / classPoints.length;
+//   console.log(classAvg);
+//   const myCompAvg = (yourPoints > classAvg) ? true : false;
+//   return myCompAvg;
+// }
+
+// console.log(betterThanAverage([56, 93, 85, 97, 82]))
+// console.log(betterThanAverage([56, 93, 85, 97, 82], 93));
+
 // 4/15/2022
 // function betterThanAverage(classPoints, yourPoints) {
 //     // I needed to create placeholder value of 0 first to add.

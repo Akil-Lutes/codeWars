@@ -1,16 +1,16 @@
 /*
-Simple, remove the spaces from the string, then return the resultant string.
+// Simple, remove the spaces from the string, then return the resultant string.
 
 https://www.codewars.com/kata/57eae20f5500ad98e50002c5/train/javascript
 */
 
 
 // 7/7/2022
-function noSpace(x){
-    return x.split(' ').join('')
-}
+// function noSpace(x){
+//     return x.split(' ').join('')
+// }
 
-console.log(noSpace('A mindset thing'))
+// console.log(noSpace('A mindset thing'))
 
 
 

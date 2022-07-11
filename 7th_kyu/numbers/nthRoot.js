@@ -24,6 +24,25 @@ https://www.codewars.com/kata/5520714decb43308ea000083/train/javascript
 
 
 
+
+// 7/10/2022
+// function root(x, n) {
+//     // TODO: Return nth root of x
+//     // Use Math.pow(x, 1/n)
+//     return Math.pow(x, 1/n); 
+//   } 
+
+// console.log(root(9, 2));
+
+
+
+
+
+
+
+
+
+
 // 4/25/2022
 // function root(x, n) {
 //     // TODO: Return nth root of x

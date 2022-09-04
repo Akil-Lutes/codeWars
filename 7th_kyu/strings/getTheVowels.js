@@ -16,29 +16,70 @@ https://www.codewars.com/kata/62a933d6d6deb7001093de16/train/javascript
 
 // Hints, remove vowels from array once they are found in the word parameter
 
-//7/10/2022
+//8/22/2022
 function getTheVowels(word) {
-    // Make an array of vowels
-    const vowels = ['a', 'e', 'i', 'o', 'u'];
+    let vowels = ['a', 'e', 'i', 'o', 'u'];
     let counter = 0;
-    console.log(vowels);
-    // for loop
+    let arrWord = word.split('');
+    // need a for loop to loop through vowels
+    // need a counter to count how many vowels there are in the array
     // if statement to compare/match letters in word array to the vowels array
-    for (const w of word) {
-        for (const vow of vowels) {
-            // console.log(vow);
-            if (w === vow) {
-                // vowels.shift() once w[1] is found (a)
+        for (let word of arrWord) {
+            if (vowels[0] === arrWord[word]) {
+                // Increment count by one
                 counter++
+                // Remove "a" from vowels
+                vowels.shift();
             }
-            console.log(counter)
         }
-    }
+    return counter;
+}
+  
+getTheVowels('Earthly');
 
-    // return 0;
+
+function getTheVowels(word) {
+    // array of vowels stored
+    const vowel = ['a', 'e', 'i', 'o', 'u'];
+    // variable to track how many consecutive vowels we've seen
+    let consec = 0;
+    for (let i = 0; i < word.length; i++) { // for each char in word...
+      if (word[i] === vowel[0]) { // check if the char is the first item in vowel, the next character we expect
+        let temp = vowel.shift(); // stores the first vowel in a temporary variable, and removes it
+        vowel.push(temp); // pushes the vowel we just removed to the end of the expected queue
+        consec++; // increase the consecutive vowel count
+      } // the new vowel[0] is the next expected vowel
+    }
+    return consec;
   }
 
-getTheVowels('Earthly');
+
+
+//7/10/2022
+// function getTheVowels(word) {
+//     // Make an array of vowels
+//     const vowels = ['a', 'e', 'i', 'o', 'u'];
+//     let counter = 0;
+//     // for loop
+//     // if statement to compare/match letters in word array to the vowels array
+//     for (const w of word) {
+//         for (const vow of vowels) {
+//             // console.log(vow);
+//             if (w === vow) {
+//                 // vowels.shift() once w[1] is found (a)
+//                 vowels.shift();
+//                 // console.log(vowels);
+//                 // counter++
+//             }
+//             console.log(counter);
+//             console.log(vowels);
+//         }
+//     }
+
+//     // return 0;
+//   }
+
+// getTheVowels('Earthly');
 
 
 

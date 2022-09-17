@@ -14,6 +14,26 @@ Output string must be two numbers separated by a single space, and highest numbe
 https://www.codewars.com/kata/554b4ac871d6813a03000035/train/javascript
 */
 
+
+// 9/16/22
+
+function highAndLow(numbers){
+    // ...
+    const max = Math.max(...numbers);
+    const min = Math.min(...numbers);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
 // Preferred way
 // function highAndLow(numbers) {
 //     numbers = numbers.split(' ').map(Number);

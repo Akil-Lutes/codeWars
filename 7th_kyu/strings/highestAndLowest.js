@@ -15,6 +15,24 @@ https://www.codewars.com/kata/554b4ac871d6813a03000035/train/javascript
 */
 
 
+
+
+
+
+
+// 10/17/2022
+function highAndLow(numbers){
+  // ...
+  // use Math.max
+  const max = Math.max(...numbers);
+  const min = Math.min(...numbers);
+  return `${max} ${min}`
+}
+
+highAndLow()
+
+
+
 // 9/16/22
 
 function highAndLow(numbers){

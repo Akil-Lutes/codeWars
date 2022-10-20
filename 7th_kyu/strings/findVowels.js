@@ -17,6 +17,27 @@ https://www.codewars.com/kata/5680781b6b7c2be860000036/train/javascript
 */
 
 
+// 10/19/2022
+function vowelIndices(word){
+    //your code here
+    const vowels = ['a', 'e', 'i', 'o', 'u', 'y'];
+    let
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // 5/24/22
 // function vowelIndices(word){

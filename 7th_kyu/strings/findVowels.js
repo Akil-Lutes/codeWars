@@ -17,26 +17,52 @@ https://www.codewars.com/kata/5680781b6b7c2be860000036/train/javascript
 */
 
 
-// 10/19/2022
-function vowelIndices(word){
+// 10/27/2022
+
+function vowelIndices(word) {
   //your code here
-  const vowels = ['a', 'e', 'i', 'o', 'u', 'y'];
-  const lowerCase = word.toLowerCase().split('');
-  // for loop through vowels and word and push vowels into empty array
+  const vowArr = ['a', 'e', 'i', 'o', 'u', 'y'];
   let empArr = [];
-  for (let i = 0; i < lowerCase.length; i++) {
-    for (let j = 0; j < vowels.length; j++) {
-      if (lowerCase[i] === vowels[j]) {
+  const loWord = word.toLowerCase().split('');
+  
+  // I need to make the outer for loop of the parameter Word first. Reason...I am using the Word param from jump.
+  for (let i = 0; i < loWord.length; i++) {
+    for (let j = 0; j < vowArr.length; j++) {
+      if (vowArr[j] === loWord[i]) {
         empArr.push(i + 1);
       }
-
-    }console.log(word);
+    }
   }
+  console.log(empArr);
 
-  return empArr;
 }
 
+
 vowelIndices('Super');
+
+
+
+
+// 10/19/2022
+// function vowelIndices(word){
+//   //your code here
+//   const vowels = ['a', 'e', 'i', 'o', 'u', 'y'];
+//   const lowerCase = word.toLowerCase().split('');
+//   // for loop through vowels and word and push vowels into empty array
+//   let empArr = [];
+//   for (let i = 0; i < lowerCase.length; i++) {
+//     for (let j = 0; j < vowels.length; j++) {
+//       if (lowerCase[i] === vowels[j]) {
+//         empArr.push(i + 1);
+//       }
+
+//     }console.log(word);
+//   }
+
+//   return empArr;
+// }
+
+// vowelIndices('Super');
 
 
 // 5/24/22

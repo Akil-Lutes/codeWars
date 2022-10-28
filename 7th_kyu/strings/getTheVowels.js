@@ -16,26 +16,53 @@ https://www.codewars.com/kata/62a933d6d6deb7001093de16/train/javascript
 
 // Hints, remove vowels from array once they are found in the word parameter
 
-//8/22/2022
 function getTheVowels(word) {
-    let vowels = ['a', 'e', 'i', 'o', 'u'];
-    // variable to track how many consecutive vowels we've seen
-    let counter = 0;
-    // need a for loop to loop through vowels
-    // need a counter to count how many vowels there are in the array
-    // if statement to compare/match letters in word array to the vowels array
-        for (let i = 0; i < word.length; i++) {
-            if (word[i] === vowels[0]) { // check if the char is the first item in vowel, the next character we expect
-                let temp = vowels.shift(); // stores the first vowel in a temporary variable, and removes it (remember it is inside of for loop)
-                vowels.push(temp); // pushes the vowel we just removed to the end of the expected queue
-                counter++ // Increment count by one
-            }
-    }
-    console.log(counter);
-    return counter;
-}
+    
+    return 0;
+  }
+
+getTheVowels("agrtertyfikfmroyrntbvsukldkfa");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//8/22/2022
+// function getTheVowels(word) {
+//     let vowels = ['a', 'e', 'i', 'o', 'u'];
+//     // variable to track how many consecutive vowels we've seen
+//     let counter = 0;
+//     // need a for loop to loop through vowels
+//     // need a counter to count how many vowels there are in the array
+//     // if statement to compare/match letters in word array to the vowels array
+//         for (let i = 0; i < word.length; i++) {
+//             if (word[i] === vowels[0]) { // check if the char is the first item in vowel, the next character we expect
+//                 let temp = vowels.shift(); // stores the first vowel in a temporary variable, and removes it (remember it is inside of for loop)
+//                 vowels.push(temp); // pushes the vowel we just removed to the end of the expected queue
+//                 counter++ // Increment count by one
+//             }
+//     }
+//     console.log(counter);
+//     return counter;
+// }
   
-console.log(getTheVowels('Earthly'))
+// console.log(getTheVowels('Earthly'))
 
 
 // function getTheVowels(word) {

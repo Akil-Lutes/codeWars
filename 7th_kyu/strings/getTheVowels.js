@@ -15,11 +15,31 @@ https://www.codewars.com/kata/62a933d6d6deb7001093de16/train/javascript
 */
 
 // Hints, remove vowels from array once they are found in the word parameter
+// Need a counter (to count the vowels in the array from a - u)
+// let temp = vowels.shift(); // stores the first vowel in a temporary variable, and removes it (remember it is inside of for loop)
 
+
+
+
+
+// 11/27/2022
 function getTheVowels(word) {
-    
-    return 0;
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
+  let lowVowArr = word.toLowerCase();
+  let counter = 0;
+  for (let i = 0; i < lowVowArr.length; i++) {
+    if (word[i] === vowels[0]) {
+      let temp = vowels.shift();
+      vowels.push(temp); // push matched vowel in temp variable
+      counter++
+    }
   }
+  // how to remove vowels from array once picked
+
+
+  console.log(counter);
+  return counter;
+}
 
 getTheVowels("agrtertyfikfmroyrntbvsukldkfa");
 

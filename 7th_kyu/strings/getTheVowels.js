@@ -22,21 +22,19 @@ https://www.codewars.com/kata/62a933d6d6deb7001093de16/train/javascript
 
 
 
-// 11/27/2022
+// 11/28/2022
+
 function getTheVowels(word) {
   const vowels = ['a', 'e', 'i', 'o', 'u'];
-  let lowVowArr = word.toLowerCase();
   let counter = 0;
-  for (let i = 0; i < lowVowArr.length; i++) {
+  for (let i = 0; i < word.length; i++) {
     if (word[i] === vowels[0]) {
       let temp = vowels.shift();
-      vowels.push(temp); // push matched vowel in temp variable
+      // I take the the vowel that was moved out and moved back in vowel array.
+      vowels.push(temp);
       counter++
     }
   }
-  // how to remove vowels from array once picked
-
-
   console.log(counter);
   return counter;
 }
@@ -58,7 +56,26 @@ getTheVowels("agrtertyfikfmroyrntbvsukldkfa");
 
 
 
+// 11/27/2022
+// function getTheVowels(word) {
+//   const vowels = ['a', 'e', 'i', 'o', 'u'];
+//   let lowVowArr = word.toLowerCase();
+//   let counter = 0;
+//   for (let i = 0; i < lowVowArr.length; i++) {
+//     if (word[i] === vowels[0]) {
+//       let temp = vowels.shift();
+//       vowels.push(temp); // push matched vowel in temp variable
+//       counter++
+//     }
+//   }
+//   // how to remove vowels from array once picked
 
+
+//   console.log(counter);
+//   return counter;
+// }
+
+// getTheVowels("agrtertyfikfmroyrntbvsukldkfa");
 
 
 

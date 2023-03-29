@@ -15,8 +15,12 @@ https://www.codewars.com/kata/565b112d09c1adfdd500019c/train/javascript
 */
 
 
+const nthChar = words => words.reduce((acc, currVal, index) => acc + currVal[index], "");
 
-// Real Solution
+
+console.log(nthChar(["yoda", "best", "has"]));
+
+// Another Potential Solution
 // function nthChar(words){
 //     var word = '';
 //     for(var i = 0, l = words.length; i < l; ++i){
@@ -25,26 +29,3 @@ https://www.codewars.com/kata/565b112d09c1adfdd500019c/train/javascript
   
 //    return word;
 //   }
-
-
-// function nthChar(words) {
-//     // for loop
-//     // empty string
-//     let empStr = '';
-//     // let n = 0;
-//     for (let i = 0; i < words.length; i++) {
-//         for (let n = ; n < arrStr.length - 1; n++) {
-        
-//         }
-//     }
-// }
-
-// // Helper function
-// function stringArr(str) {
-//     const arrStr = str.split('')
-//     return arrStr;
-// }
-
-// console.log(stringArr('poison'));
-
-nthChar(["yoda", "best", "has"]);

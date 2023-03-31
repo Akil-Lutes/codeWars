@@ -17,10 +17,36 @@ https://www.codewars.com/kata/5680781b6b7c2be860000036/train/javascript
 */
 
 
+function vowelIndices(word){
+    const vowArr = ['a', 'e', 'i', 'o', 'u', 'y'];
+    let empArr = [];
+    const loWord = word.toLowerCase().split('');
+
+    //   // I need to make the outer for loop of the parameter Word first. Reason...I am using the Word param from jump.
+    for (let i = 0; i < loWord.length; i++) {
+        for (let j = o; j < vowArr.length; j++) {
+            if (vowArr[j] === loWord[i]) {
+                empArr.push(i + 1);
+            }
+        }
+    }
+    console.log(empArr);
+
+  }
+
+vowelIndices
+
+
+
+
+
+// 3/29/2023
+
+
+
 // 10/27/2022
 
 // function vowelIndices(word) {
-//   //your code here
 //   const vowArr = ['a', 'e', 'i', 'o', 'u', 'y'];
 //   let empArr = [];
 //   const loWord = word.toLowerCase().split('');

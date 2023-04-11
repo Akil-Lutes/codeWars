@@ -17,24 +17,44 @@ https://www.codewars.com/kata/5680781b6b7c2be860000036/train/javascript
 */
 
 
+
+// 4/10/23
 function vowelIndices(word){
-    const vowArr = ['a', 'e', 'i', 'o', 'u', 'y'];
+    //your code here
+    const vowels = ['a', 'e', 'i', 'o', 'u', 'y']
     let empArr = [];
     const loWord = word.toLowerCase().split('');
-
-    //   // I need to make the outer for loop of the parameter Word first. Reason...I am using the Word param from jump.
+    
     for (let i = 0; i < loWord.length; i++) {
-        for (let j = o; j < vowArr.length; j++) {
-            if (vowArr[j] === loWord[i]) {
-                empArr.push(i + 1);
-            }
+      for (let j = 0; j < vowels.length; j++) {
+        if (vowels[j] === loWord[i]) {
+          empArr.push(i + 1)
         }
+      }
     }
-    console.log(empArr);
-
+    return empArr
   }
 
-vowelIndices
+vowelIndices('Super');
+
+// function vowelIndices(word){
+//     const vowArr = ['a', 'e', 'i', 'o', 'u', 'y'];
+//     let empArr = [];
+//     const loWord = word.toLowerCase().split('');
+
+//     //   // I need to make the outer for loop of the parameter Word first. Reason...I am using the Word param from jump.
+//     for (let i = 0; i < loWord.length; i++) {
+//         for (let j = o; j < vowArr.length; j++) {
+//             if (vowArr[j] === loWord[i]) {
+//                 empArr.push(i + 1);
+//             }
+//         }
+//     }
+//     console.log(empArr);
+
+//   }
+
+// vowelIndices
 
 
 

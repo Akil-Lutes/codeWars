@@ -29,6 +29,7 @@ function getTheVowels(word) {
   for (let i = 0; i < word.length; i++) {
     if (vowels[0] === word[i]) {
       let temp = vowels.shift();
+       // I take the the vowel that was moved out and moved back in vowel array.
       vowels.push(temp)
       counter++
     }

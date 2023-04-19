@@ -15,17 +15,33 @@ vowelOne( "aeiou, abc" ) // "1111100100"
 */
 
 
-// 4/15/23
+
+
+// 4/19/23
 function vowelOne(s){
-    s = s.toLowerCase()
-    const arr = ['a', 'e', 'i', 'o', 'u']
-    let result = ''
-    for (el of s) {
-        // ternary operator
-      arr.includes(el) ? result += '1' : result += '0'
-    }
-    return result
+  s = s.toLowerCase()
+  const vowArr = ['a', 'e', 'i', 'o', 'u'];
+  let result = '';
+  for (el of s) {
+    // ternary operator
+    vowArr.includes(el) ? result += '1' : result += '0'
   }
+}
+
+
+
+
+// 4/15/23
+// function vowelOne(s){
+//     s = s.toLowerCase()
+//     const arr = ['a', 'e', 'i', 'o', 'u']
+//     let result = ''
+//     for (el of s) {
+//         // ternary operator
+//       arr.includes(el) ? result += '1' : result += '0'
+//     }
+//     return result
+//   }
 
 
 

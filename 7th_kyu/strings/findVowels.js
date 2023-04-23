@@ -18,24 +18,48 @@ https://www.codewars.com/kata/5680781b6b7c2be860000036/train/javascript
 
 
 
-// 4/10/23
+
+// 4/23/23
 function vowelIndices(word){
-    //your code here
-    const vowels = ['a', 'e', 'i', 'o', 'u', 'y']
-    let empArr = [];
-    const loWord = word.toLowerCase().split('');
-    
-    for (let i = 0; i < loWord.length; i++) {
-      for (let j = 0; j < vowels.length; j++) {
-        if (vowels[j] === loWord[i]) {
-          empArr.push(i + 1)
-        }
+  //your code here
+  const vowArr = ['a', 'e', 'i', 'o', 'u', 'y'];
+  const loWord = word.toLowerCase().split('');
+  let empArr = [];
+  for (let i = 0; i < loWord.length; i++) {
+    for (let j = 0; j < vowArr.length; j++) {
+      if (loWord[i] === vowArr[j]) {
+        // I need i (iterator) of word array, not vowel array
+        empArr.push(i + 1);
       }
     }
-    return empArr
   }
+  console.log(empArr);
+  return empArr
+
+}
 
 vowelIndices('Super');
+
+
+
+// 4/10/23
+// function vowelIndices(word){
+//     //your code here
+//     const vowels = ['a', 'e', 'i', 'o', 'u', 'y']
+//     let empArr = [];
+//     const loWord = word.toLowerCase().split('');
+    
+//     for (let i = 0; i < loWord.length; i++) {
+//       for (let j = 0; j < vowels.length; j++) {
+//         if (vowels[j] === loWord[i]) {
+//           empArr.push(i + 1)
+//         }
+//       }
+//     }
+//     return empArr
+//   }
+
+// vowelIndices('Super');
 
 // function vowelIndices(word){
 //     const vowArr = ['a', 'e', 'i', 'o', 'u', 'y'];

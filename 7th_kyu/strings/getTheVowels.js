@@ -21,26 +21,43 @@ https://www.codewars.com/kata/62a933d6d6deb7001093de16/train/javascript
 
 
 
-// 12/23/2022
-
+// 4/23/2023
 function getTheVowels(word) {
   const vowels = ['a', 'e', 'i', 'o', 'u'];
   let counter = 0;
   for (let i = 0; i < word.length; i++) {
-    if (vowels[0] === word[i]) {
+    if (vowels[0] === word[1]) {
       let temp = vowels.shift();
-       // I take the the vowel that was moved out and moved back in vowel array.
-      vowels.push(temp)
+       // I take the the vowel that was moved out and moved back in vowel array. 
+      vowels.push(temp);
       counter++
     }
   }
-  console.log(counter);
-  return counter
-  // need counter
-  // need a for loop
+  return 0;
+
 }
 
-getTheVowels("agrtertyfikfmroyrntbvsukldkfa");
+
+// 12/23/2022
+
+// function getTheVowels(word) {
+//   const vowels = ['a', 'e', 'i', 'o', 'u'];
+//   let counter = 0;
+//   for (let i = 0; i < word.length; i++) {
+//     if (vowels[0] === word[i]) {
+//       let temp = vowels.shift();
+//        // I take the the vowel that was moved out and moved back in vowel array.
+//       vowels.push(temp)
+//       counter++
+//     }
+//   }
+//   console.log(counter);
+//   return counter
+//   // need counter
+//   // need a for loop
+// }
+
+// getTheVowels("agrtertyfikfmroyrntbvsukldkfa");
 
 
 

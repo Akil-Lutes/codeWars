@@ -27,3 +27,14 @@ let { title, age, type } = options;
 console.log(title);
 console.log(age);
 console.log(type);
+
+// React Functional Component Destructuring
+
+// 1. Destructure props
+const { name, placeholder } = props;
+
+// OR you can use this but desturcture is the best option
+
+// 2. Without Destructure
+// const name = props.name;
+// const placeholder = props.placeholder

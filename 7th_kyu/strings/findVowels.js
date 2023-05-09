@@ -19,6 +19,61 @@ https://www.codewars.com/kata/5680781b6b7c2be860000036/train/javascript
 
 
 
+
+
+
+// 5/9/23
+
+function vowelIndices(word){
+    //your code here
+    const vowArr = ['a', 'e', 'i', 'o', 'u', 'y'];
+    let empArr = [];
+    const loWord = word.toLowerCase().split('');
+    console.log(loWord);
+    for (let i = 0; i < loWord.length; i++) {
+        for (let j = 0; j < vowArr.length; j++) { 
+            if (loWord[i] === vowArr[j]) {
+                console.log('Match');
+                 // I need i (iterator) of word array, not vowel array
+                empArr.push(1 + i);
+            }
+        }
+    }
+    console.log(empArr);
+    return empArr;
+  }
+
+
+vowelIndices('Super');
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // 4/23/23
 // function vowelIndices(word){
 //   //your code here

@@ -18,56 +18,51 @@ https://www.codewars.com/kata/5680781b6b7c2be860000036/train/javascript
 
 
 
+// 7/5/23
+function vowelIndices(word){
+    // will need counter
+    // will need a nested for loop
+    // will need an empty array
+    const vowArr = ['a', 'e', 'i', 'o', 'u', 'y'];
+    const empArr = [];
+    for (let i = 0; i < word.length; i++) {
+        for (let j = 0; j < vowArr.length; j++) {
+            if (word[i] === vowArr[j]) {
+                empArr.push(1 + i);
+            }
+        }
+        console.log(empArr)
+        return empArr;
+    }
 
-
+}
+  
+vowelIndices('Super');
 
 
 // 5/9/23
 
-function vowelIndices(word){
-    //your code here
-    const vowArr = ['a', 'e', 'i', 'o', 'u', 'y'];
-    let empArr = [];
-    const loWord = word.toLowerCase().split('');
-    console.log(loWord);
-    for (let i = 0; i < loWord.length; i++) {
-        for (let j = 0; j < vowArr.length; j++) { 
-            if (loWord[i] === vowArr[j]) {
-                console.log('Match');
-                 // I need i (iterator) of word array, not vowel array
-                empArr.push(1 + i);
-            }
-        }
-    }
-    console.log(empArr);
-    return empArr;
-  }
+// function vowelIndices(word){
+//     //your code here
+//     const vowArr = ['a', 'e', 'i', 'o', 'u', 'y'];
+//     let empArr = [];
+//     const loWord = word.toLowerCase().split('');
+//     console.log(loWord);
+//     for (let i = 0; i < loWord.length; i++) {
+//         for (let j = 0; j < vowArr.length; j++) { 
+//             if (loWord[i] === vowArr[j]) {
+//                 console.log('Match');
+//                  // I need i (iterator) of word array, not vowel array
+//                 empArr.push(1 + i);
+//             }
+//         }
+//     }
+//     console.log(empArr);
+//     return empArr;
+//   }
 
 
-vowelIndices('Super');
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// vowelIndices('Super');
 
 
 

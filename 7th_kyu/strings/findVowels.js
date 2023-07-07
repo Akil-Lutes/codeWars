@@ -24,17 +24,17 @@ function vowelIndices(word){
     // will need a nested for loop
     // will need an empty array
     const vowArr = ['a', 'e', 'i', 'o', 'u', 'y'];
+    const loWord = word.toLowerCase().split('');
     const empArr = [];
-    for (let i = 0; i < word.length; i++) {
+    for (let i = 0; i < loWord.length; i++) {
         for (let j = 0; j < vowArr.length; j++) {
-            if (word[i] === vowArr[j]) {
+            if (loWord[i] === vowArr[j]) {
                 empArr.push(1 + i);
             }
         }
-        console.log(empArr)
-        return empArr;
     }
-
+    console.log(empArr)
+        return empArr;
 }
   
 vowelIndices('Super');

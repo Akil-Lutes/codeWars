@@ -16,29 +16,26 @@ This is indexed from [1..n] (not zero indexed!)
 https://www.codewars.com/kata/5680781b6b7c2be860000036/train/javascript
 */
 
-
-
 // 7/5/23
-function vowelIndices(word){
-    // will need counter
-    // will need a nested for loop
-    // will need an empty array
-    const vowArr = ['a', 'e', 'i', 'o', 'u', 'y'];
-    const loWord = word.toLowerCase().split('');
-    const empArr = [];
-    for (let i = 0; i < loWord.length; i++) {
-        for (let j = 0; j < vowArr.length; j++) {
-            if (loWord[i] === vowArr[j]) {
-                empArr.push(1 + i);
-            }
-        }
-    }
-    console.log(empArr)
-        return empArr;
+function vowelIndices(word) {
+	// will need counter
+	// will need a nested for loop
+	// will need an empty array
+	const vowArr = ["a", "e", "i", "o", "u", "y"];
+	const loWord = word.toLowerCase().split("");
+	const empArr = [];
+	for (let i = 0; i < loWord.length; i++) {
+		for (let j = 0; j < vowArr.length; j++) {
+			if (loWord[i] === vowArr[j]) {
+				empArr.push(1 + i);
+			}
+		}
+	}
+	console.log(empArr);
+	return empArr;
 }
-  
-vowelIndices('Super');
 
+vowelIndices("Super");
 
 // 5/9/23
 
@@ -49,7 +46,7 @@ vowelIndices('Super');
 //     const loWord = word.toLowerCase().split('');
 //     console.log(loWord);
 //     for (let i = 0; i < loWord.length; i++) {
-//         for (let j = 0; j < vowArr.length; j++) { 
+//         for (let j = 0; j < vowArr.length; j++) {
 //             if (loWord[i] === vowArr[j]) {
 //                 console.log('Match');
 //                  // I need i (iterator) of word array, not vowel array
@@ -61,13 +58,7 @@ vowelIndices('Super');
 //     return empArr;
 //   }
 
-
 // vowelIndices('Super');
-
-
-
-
-
 
 // 4/23/23
 // function vowelIndices(word){
@@ -90,15 +81,13 @@ vowelIndices('Super');
 
 // vowelIndices('Super');
 
-
-
 // 4/10/23
 // function vowelIndices(word){
 //     //your code here
 //     const vowels = ['a', 'e', 'i', 'o', 'u', 'y']
 //     let empArr = [];
 //     const loWord = word.toLowerCase().split('');
-    
+
 //     for (let i = 0; i < loWord.length; i++) {
 //       for (let j = 0; j < vowels.length; j++) {
 //         if (vowels[j] === loWord[i]) {
@@ -130,13 +119,7 @@ vowelIndices('Super');
 
 // vowelIndices
 
-
-
-
-
 // 3/29/2023
-
-
 
 // 10/27/2022
 
@@ -144,7 +127,7 @@ vowelIndices('Super');
 //   const vowArr = ['a', 'e', 'i', 'o', 'u', 'y'];
 //   let empArr = [];
 //   const loWord = word.toLowerCase().split('');
-  
+
 //   // I need to make the outer for loop of the parameter Word first. Reason...I am using the Word param from jump.
 //   for (let i = 0; i < loWord.length; i++) {
 //     for (let j = 0; j < vowArr.length; j++) {
@@ -157,10 +140,7 @@ vowelIndices('Super');
 
 // }
 
-
 // vowelIndices('Super');
-
-
 
 // 10/19/2022
 // function vowelIndices(word){
@@ -183,7 +163,6 @@ vowelIndices('Super');
 
 // vowelIndices('Super');
 
-
 // 5/24/22
 // function vowelIndices(word){
 //     // two if statements
@@ -205,16 +184,6 @@ vowelIndices('Super');
 //   }
 
 // vowelIndices('super');
-
-
-
-
-
-
-
-
-
-
 
 // 5/2/22
 // function vowelIndices(word){
@@ -240,27 +209,12 @@ vowelIndices('Super');
 
 // vowelIndices('Super');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // 4/25/22
 // function vowelIndices(word){
 //     //your code here
 //     // for loop
 //     // if statement
-//     // empty 
+//     // empty
 //     let newVow = [];
 //     let vowArr = ['a', 'e', 'i', 'o', 'u', 'y'];
 //     let wordArr = word.toLowerCase().split('');
@@ -278,5 +232,5 @@ vowelIndices('Super');
 //     return newVow;
 
 // }
-  
+
 // console.log(vowelIndices('Apple'));

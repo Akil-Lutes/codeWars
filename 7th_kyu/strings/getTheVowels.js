@@ -23,22 +23,22 @@ https://www.codewars.com/kata/62a933d6d6deb7001093de16/train/javascript
 
 
 // 8/13/2023
-function getTheVowels(word) {
-  const vowels = ['a', 'e', 'i', 'o', 'u'];
-  let counter = 0;
-  for (let i = 0; i < word.length; i++) {
-    if (vowels[0] === word[i]) {
-      let temp = vowels.shift();
-      // I take the vowel that was moved out and moved back in the vowel array
-      vowels.push(temp)
-      counter++
-    }
-  }
-  console.log(counter)
-  return counter;
-}
+// function getTheVowels(word) {
+//   const vowels = ['a', 'e', 'i', 'o', 'u'];
+//   let counter = 0;
+//   for (let i = 0; i < word.length; i++) {
+//     if (vowels[0] === word[i]) {
+//       let temp = vowels.shift();
+//       // I take the vowel that was moved out and moved back in the vowel array
+//       vowels.push(temp)
+//       counter++
+//     }
+//   }
+//   console.log(counter)
+//   return counter;
+// }
 
-getTheVowels("agrtertyfikfmroyrntbvsukldkfa")
+// getTheVowels("agrtertyfikfmroyrntbvsukldkfa")
 
 // 4/23/2023
 // function getTheVowels(word) {

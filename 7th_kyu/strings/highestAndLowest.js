@@ -18,26 +18,16 @@ https://www.codewars.com/kata/554b4ac871d6813a03000035/train/javascript
 
 
 
+// 8/18/2023
+function highAndLow(numbers) {
+    numbers = numbers.split(' ').map(Number);
+    console.log(numbers)
+    const max = Math.max(...numbers);
+    const min = Math.min(...numbers);
+    return `${max} ${min}`;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(highAndLow("1 2 3 4 5"));
 
 
 // // 10/17/2022
